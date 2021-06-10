@@ -1,0 +1,29 @@
+{
+  "name": "testpackagesinstall",
+  "version": "1.0.0",
+  "description": "testing installing packages",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "node lib/app.js",
+    "build-n-start": "npm run build && node lib/app.js",
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew W. Sanders",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/express": "^4.17.12",
+    "@types/lodash": "^4.14.170",
+    "@types/node": "^15.12.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "giphy-me": "^1.0.0",
+    "lodash": "^4.17.21",
+    "realtime": "file://./test_modules/package.tgz"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}
